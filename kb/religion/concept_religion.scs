@@ -1,0 +1,11 @@
+concept_religion
+<- sc_node_class;
+<- concept_wit_entity;
+=> nrel_main_idtf: [Религия] (* <- lang_ru;; *);
+=> nrel_note: [Система верований и культовых действий, объединяющая людей на основе веры в сверхъестественное.] (* <- lang_ru;; *);;
+
+concept_god
+<- sc_node_class;
+<- concept_wit_entity;
+=> nrel_main_idtf: [Бог] (* <- lang_ru;; *);
+=> nrel_note: [Создатель] (* <- lang_ru;; *);;

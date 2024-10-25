@@ -1,0 +1,59 @@
+nrel_believes_in
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+=> nrel_main_idtf:
+    [Вера в] 
+    (* <- lang_ru;; *);
+    [Believes in]
+    (* <- lang_en;; *);
+=> nrel_first_domain: concept_religious_person;
+=> nrel_second_domain: concept_deity;;
+
+nrel_worships
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+=> nrel_main_idtf:
+    [Поклонение] 
+    (* <- lang_ru;; *);
+    [Worships]
+    (* <- lang_en;; *);
+=> nrel_first_domain: concept_religious_person;
+=> nrel_second_domain: concept_deity;;
+
+nrel_performs_ritual
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+=> nrel_main_idtf:
+    [Проводит ритуал] 
+    (* <- lang_ru;; *);
+    [Performs ritual]
+    (* <- lang_en;; *);
+=> nrel_first_domain: concept_religious_person;
+=> nrel_second_domain: concept_ritual;;
+
+nrel_occurs_in
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- reflexive_relation;
+<- asymmetric_relation;
+=> nrel_main_idtf:
+    [Происходит в] 
+    (* <- lang_ru;; *);
+    [Occurs in]
+    (* <- lang_en;; *);
+=> nrel_first_domain: concept_ritual;
+=> nrel_second_domain: concept_place_of_worship;;

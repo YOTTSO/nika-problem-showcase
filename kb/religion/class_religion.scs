@@ -1,0 +1,95 @@
+
+concept_deity
+    => nrel_main_idtf: [Божество] (* <- lang_ru;; *);
+    => nrel_note: [Существо или сущности, обладающие сверхъестественными способностями, которым поклоняются.] (* <- lang_ru;; *);
+    <- concept_wit_entity;
+    <- sc_node_class;;
+
+concept_religious_text
+    => nrel_main_idtf: [Религиозный текст] (* <- lang_ru;; *);
+    => nrel_note: [Священные тексты, описывающие догмы, истории и ритуалы.] (* <- lang_ru;; *);
+    <- concept_wit_entity;
+    <- sc_node_class;;
+
+concept_ritual
+    => nrel_main_idtf: [Ритуал] (* <- lang_ru;; *);
+    => nrel_note: [Определенные действия, выполняемые в религиозных целях.] (* <- lang_ru;; *);
+    <- concept_wit_entity;
+    <- sc_node_class;;
+
+concept_place_of_worship
+    => nrel_main_idtf: [Место поклонения] (* <- lang_ru;; *);
+    => nrel_note: [Место, предназначенное для проведения религиозных обрядов и служб.] (* <- lang_ru;; *);
+    <- sc_node_class;;
+
+concept_holy_book
+    => nrel_main_idtf: [Священная книга] (* <- lang_ru;; *);
+    => nrel_note: [Книга, считающаяся священной и содержащая религиозные догмы.] (* <- lang_ru;; *);
+    <- sc_node_class;
+    <= nrel_inclusion: concept_religious_text;;
+
+concept_commentary
+    => nrel_main_idtf: [Комментарий] (* <- lang_ru;; *);
+    => nrel_note: [Толкования или объяснения священных текстов.] (* <- lang_ru;; *);
+    <- sc_node_class;
+    <= nrel_inclusion: concept_religious_text;;
+
+concept_legend
+    => nrel_main_idtf: [Легенда] (* <- lang_ru;; *);
+    => nrel_note: [Истории и мифы, связанные с религиозными событиями и героями.] (* <- lang_ru;; *);
+    <- sc_node_class;
+    <= nrel_inclusion: concept_religious_text;;
+
+concept_priest
+    => nrel_main_idtf: [Священник] (* <- lang_ru;; *);
+    => nrel_note: [Человек, выполняющий религиозные обряды и представляющий религию.] (* <- lang_ru;; *);
+    <- sc_node_class;
+    <= nrel_inclusion: concept_religious_person;;
+
+concept_prophet
+    => nrel_main_idtf: [Пророк] (* <- lang_ru;; *);
+    => nrel_note: [Человек, считающийся посредником между людьми и божеством.] (* <- lang_ru;; *);
+    <- sc_node_class;
+    <= nrel_inclusion: concept_religious_person;;
+
+concept_teacher
+    => nrel_main_idtf: [Учитель] (* <- lang_ru;; *);
+    => nrel_note: [Человек, обучающий религиозным истинам и догмам.] (* <- lang_ru;; *);
+    <- sc_node_class;
+    <= nrel_inclusion: concept_religious_person;;
+
+concept_prayer
+    => nrel_main_idtf: [Молитва] (* <- lang_ru;; *);
+    => nrel_note: [Вербальное обращение к божеству или духовным силам.] (* <- lang_ru;; *);
+    <- sc_node_class;
+    <= nrel_inclusion: concept_ritual;;
+
+concept_sacrifice
+    => nrel_main_idtf: [Жертвоприношение] (* <- lang_ru;; *);
+    => nrel_note: [Предложение даров или жертв в знак поклонения или просьбы.] (* <- lang_ru;; *);
+    <- sc_node_class;
+    <= nrel_inclusion: concept_ritual;;
+
+concept_pilgrimage
+    => nrel_main_idtf: [Паломничество] (* <- lang_ru;; *);
+    => nrel_note: [Путешествие в священное место в религиозных целях.] (* <- lang_ru;; *);
+    <- sc_node_class;
+    <= nrel_inclusion: concept_ritual;;
+
+concept_temple
+    => nrel_main_idtf: [Храм] (* <- lang_ru;; *);
+    => nrel_note: [Место поклонения и проведения ритуалов.] (* <- lang_ru;; *);
+    <- sc_node_class;
+    <= nrel_inclusion: concept_place_of_worship;;
+
+concept_mosque
+    => nrel_main_idtf: [Мечеть] (* <- lang_ru;; *);
+    => nrel_note: [Мусульманское место поклонения.] (* <- lang_ru;; *);
+    <- sc_node_class;
+    <= nrel_inclusion: concept_place_of_worship;;
+
+concept_synagogue
+    => nrel_main_idtf: [Синагога] (* <- lang_ru;; *);
+    => nrel_note: [Иудейское место поклонения.] (* <- lang_ru;; *);
+    <- sc_node_class;
+    <= nrel_inclusion: concept_place_of_worship;;

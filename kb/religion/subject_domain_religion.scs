@@ -1,0 +1,133 @@
+section_subject_domain_of_religion
+    => nrel_main_idtf:
+        [Раздел. Предметная область религии] (* <- lang_ru;; *);
+        [Section. Subject domain of religion] (* <- lang_en;; *);
+<- sc_node_class;
+<- atomic_section;;
+
+section_subject_domain_of_religion = [*
+    subject_domain_religion
+        => nrel_main_idtf: 
+            [Предметная область религии] (* <- lang_ru;; *);
+            [Subject domain of religion] (* <- lang_en;; *);
+        <- subject_domain;
+        -> rrel_maximum_studied_object_class:
+            concept_religion;
+        -> rrel_explored_relation:
+            nrel_believes_in;
+            nrel_performs_ritual;
+            nrel_worships;
+            nrel_occurs_in;
+            nrel_uses;
+        -> rrel_not_maximum_studied_object_class:
+            concept_place_of_worship;
+            concept_ritual;
+            concept_prayer;
+            concept_sacrifice;
+            concept_pilgrimage;
+            concept_deity;
+            concept_holy_book;
+            concept_commentary;
+            concept_legend;
+            concept_teacher;
+            concept_priest;
+            concept_prophet;;
+*];;
+
+rrel_key_sc_element -> (section_subject_domain_of_religion -> subject_domain_religion)
+(*
+    => nrel_key_sc_element_order: (section_subject_domain_of_religion -> concept_religion)
+    (*
+        <- rrel_key_sc_element;;
+        => nrel_key_sc_element_order: (section_subject_domain_of_religion -> concept_religious_person)
+        (*
+            <- rrel_key_sc_element;;
+            => nrel_key_sc_element_order: (section_subject_domain_of_religion -> concept_deity)
+            (*
+                <- rrel_key_sc_element;;
+                => nrel_key_sc_element_order: (section_subject_domain_of_religion -> concept_priest)
+                (*
+                    <- rrel_key_sc_element;;
+                    => nrel_key_sc_element_order: (section_subject_domain_of_religion -> concept_prophet)
+                    (*
+                        <- rrel_key_sc_element;;
+                        => nrel_key_sc_element_order: (section_subject_domain_of_religion -> concept_teacher)
+                        (*
+                            <- rrel_key_sc_element;;
+                            => nrel_key_sc_element_order: (section_subject_domain_of_religion -> concept_place_of_worship)
+                            (*
+                                <- rrel_key_sc_element;;
+                                => nrel_key_sc_element_order: (section_subject_domain_of_religion -> concept_temple)
+                                (*
+                                    <- rrel_key_sc_element;;
+                                    => nrel_key_sc_element_order: (section_subject_domain_of_religion -> concept_mosque)
+                                    (*
+                                        <- rrel_key_sc_element;;
+                                        => nrel_key_sc_element_order: (section_subject_domain_of_religion -> concept_synagogue)
+                                        (*
+                                            <- rrel_key_sc_element;;
+                                            => nrel_key_sc_element_order: (section_subject_domain_of_religion -> concept_holy_book)
+                                            (*
+                                                <- rrel_key_sc_element;;
+                                                => nrel_key_sc_element_order: (section_subject_domain_of_religion -> concept_commentary)
+                                                (*
+                                                    <- rrel_key_sc_element;;
+                                                    => nrel_key_sc_element_order: (section_subject_domain_of_religion -> concept_legend)
+                                                    (*
+                                                        <- rrel_key_sc_element;;
+                                                        => nrel_key_sc_element_order: (section_subject_domain_of_religion -> concept_ritual)
+                                                        (*
+                                                            <- rrel_key_sc_element;;
+                                                            => nrel_key_sc_element_order: (section_subject_domain_of_religion -> concept_prayer)
+                                                            (*
+                                                                <- rrel_key_sc_element;;
+                                                                => nrel_key_sc_element_order: (section_subject_domain_of_religion -> concept_sacrifice)
+                                                                (*
+                                                                    <- rrel_key_sc_element;;
+                                                                    => nrel_key_sc_element_order: (section_subject_domain_of_religion -> concept_pilgrimage)
+                                                                    (*
+                                                                        <- rrel_key_sc_element;;
+                                                                        => nrel_key_sc_element_order: (section_subject_domain_of_religion -> nrel_believes_in)
+                                                                        (*
+                                                                            <- rrel_key_sc_element;;
+                                                                            => nrel_key_sc_element_order: (section_subject_domain_of_religion -> nrel_performs_ritual)
+                                                                            (*
+                                                                                <- rrel_key_sc_element;;
+                                                                                => nrel_key_sc_element_order: (section_subject_domain_of_religion -> nrel_worships)
+                                                                                (*
+                                                                                    <- rrel_key_sc_element;;
+                                                                                    => nrel_key_sc_element_order: (section_subject_domain_of_religion -> nrel_occurs_in)
+                                                                                    (*
+                                                                                        <- rrel_key_sc_element;;
+                                                                                        => nrel_key_sc_element_order: (section_subject_domain_of_religion -> nrel_uses)
+                                                                                        (* <- rrel_key_sc_element;; *);;
+                                                                                    *);;        
+                                                                                *);;
+                                                                            *);;
+                                                                        *);;
+                                                                    *);;
+                                                                *);;
+                                                            *);;
+                                                        *);;
+                                                    *);;
+                                                *);;
+                                            *);;
+                                        *);;
+                                    *);;
+                                *);;
+                            *);;
+                        *);;
+                    *);;
+                *);;
+            *);;
+        *);;
+    *);;
+*);;
+
+
+concept_religious_person
+    => nrel_main_idtf: [Религиозный человек] (* <- lang_ru;; *);
+    => nrel_note: [Человек, практикующий или верящий в определенную религию.] (* <- lang_ru;; *);
+    <- sc_node_class;
+    <- concept_wit_entity;
+    <= nrel_inclusion: concept_human;;

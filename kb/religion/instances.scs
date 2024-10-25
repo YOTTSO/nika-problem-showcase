@@ -1,0 +1,183 @@
+religious_person_john <- concept_religious_person;;
+religious_person_mary <- concept_religious_person;;
+
+deity_zeus <- concept_deity;;
+deity_athena <- concept_deity;;
+
+ritual_prayer <- concept_ritual;;
+ritual_sacrifice <- concept_ritual;;
+
+worship_place_st_peter_basilica <- concept_place_of_worship;;
+worship_place_mecca <- concept_place_of_worship;;
+
+sacred_text_bible <- concept_sacred_text;;
+sacred_text_quran <- concept_sacred_text;;
+
+festival_easter <- concept_religious_festival;;
+festival_ramadan <- concept_religious_festival;;
+
+pilgrimage_hajj <- concept_pilgrimage;;
+pilgrimage_kumbh_mela <- concept_pilgrimage;;
+
+religious_community_catholic <- concept_religious_community;;
+religious_community_buddhist <- concept_religious_community;;
+
+religious_artifact_cross <- concept_religious_artifact;;
+religious_artifact_torah_scroll <- concept_religious_artifact;;
+
+religious_event_mass <- concept_religious_event;;
+religious_event_baptism <- concept_religious_event;;
+
+religious_doctrine_trinity <- concept_religious_doctrine;;
+religious_doctrine_karma <- concept_religious_doctrine;;
+
+religious_moral_principle_non_violence <- concept_religious_moral_principle;;
+religious_moral_principle_forgiveness <- concept_religious_moral_principle;;
+
+spiritual_leader_pope_francis <- concept_spiritual_leader;;
+spiritual_leader_dalai_lama <- concept_spiritual_leader;;
+
+sacred_place_jerusalem <- concept_sacred_place;;
+sacred_place_varanasi <- concept_sacred_place;;
+
+// Добавление идентификаторов для экземпляров
+religious_person_john
+    => nrel_main_idtf:
+        [Джон, священник] (* <- lang_ru;; *);
+        [John, a priest] (* <- lang_en;; *);;
+
+religious_person_mary
+    => nrel_main_idtf:
+        [Мария, монахиня] (* <- lang_ru;; *);
+        [Mary, a nun] (* <- lang_en;; *);;
+
+deity_zeus
+    => nrel_main_idtf:
+        [Зевс] (* <- lang_ru;; *);
+        [Zeus] (* <- lang_en;; *);;
+
+deity_athena
+    => nrel_main_idtf:
+        [Афина] (* <- lang_ru;; *);
+        [Athena] (* <- lang_en;; *);;
+
+ritual_prayer
+    => nrel_main_idtf:
+        [Ежедневная молитва] (* <- lang_ru;; *);
+        [Daily prayer] (* <- lang_en;; *);;
+
+ritual_sacrifice
+    => nrel_main_idtf:
+        [Жертвоприношение] (* <- lang_ru;; *);
+        [Sacrifice] (* <- lang_en;; *);;
+
+worship_place_st_peter_basilica
+    => nrel_main_idtf:
+        [Базилика Святого Петра] (* <- lang_ru;; *);
+        [St. Peter's Basilica] (* <- lang_en;; *);;
+
+worship_place_mecca
+    => nrel_main_idtf:
+        [Мекка] (* <- lang_ru;; *);
+        [Mecca] (* <- lang_en;; *);;
+
+sacred_text_bible
+    => nrel_main_idtf:
+        [Библия] (* <- lang_ru;; *);
+        [Bible] (* <- lang_en;; *);;
+
+sacred_text_quran
+    => nrel_main_idtf:
+        [Коран] (* <- lang_ru;; *);
+        [Quran] (* <- lang_en;; *);;
+
+festival_easter
+    => nrel_main_idtf:
+        [Пасха] (* <- lang_ru;; *);
+        [Easter] (* <- lang_en;; *);;
+
+festival_ramadan
+    => nrel_main_idtf:
+        [Рамадан] (* <- lang_ru;; *);
+        [Ramadan] (* <- lang_en;; *);;
+
+pilgrimage_hajj
+    => nrel_main_idtf:
+        [Хадж] (* <- lang_ru;; *);
+        [Hajj] (* <- lang_en;; *);;
+
+pilgrimage_kumbh_mela
+    => nrel_main_idtf:
+        [Кумбха-Мела] (* <- lang_ru;; *);
+        [Kumbh Mela] (* <- lang_en;; *);;
+
+religious_community_catholic
+    => nrel_main_idtf:
+        [Католическая община] (* <- lang_ru;; *);
+        [Catholic community] (* <- lang_en;; *);;
+
+religious_community_buddhist
+    => nrel_main_idtf:
+        [Буддийская община] (* <- lang_ru;; *);
+        [Buddhist community] (* <- lang_en;; *);;
+
+religious_artifact_cross
+    => nrel_main_idtf:
+        [Крест] (* <- lang_ru;; *);
+        [Cross] (* <- lang_en;; *);;
+
+religious_artifact_torah_scroll
+    => nrel_main_idtf:
+        [Свиток Торы] (* <- lang_ru;; *);
+        [Torah Scroll] (* <- lang_en;; *);;
+
+religious_event_mass
+    => nrel_main_idtf:
+        [Месса] (* <- lang_ru;; *);
+        [Mass] (* <- lang_en;; *);;
+
+religious_event_baptism
+    => nrel_main_idtf:
+        [Крещение] (* <- lang_ru;; *);
+        [Baptism] (* <- lang_en;; *);;
+
+religious_doctrine_trinity
+    => nrel_main_idtf:
+        [Троица] (* <- lang_ru;; *);
+        [Trinity] (* <- lang_en;; *);;
+
+religious_doctrine_karma
+    => nrel_main_idtf:
+        [Карма] (* <- lang_ru;; *);
+        [Karma] (* <- lang_en;; *);;
+
+religious_moral_principle_non_violence
+    => nrel_main_idtf:
+        [Ненасилие] (* <- lang_ru;; *);
+        [Non-violence] (* <- lang_en;; *);;
+
+religious_moral_principle_forgiveness
+    => nrel_main_idtf:
+        [Прощение] (* <- lang_ru;; *);
+        [Forgiveness] (* <- lang_en;; *);;
+
+spiritual_leader_pope_francis
+    => nrel_main_idtf:
+        [Папа Франциск] (* <- lang_ru;; *);
+        [Pope Francis] (* <- lang_en;; *);;
+
+spiritual_leader_dalai_lama
+    => nrel_main_idtf:
+        [Далай-лама] (* <- lang_ru;; *);
+        [Dalai Lama] (* <- lang_en;; *);;
+
+sacred_place_jerusalem
+    => nrel_main_idtf:
+        [Иерусалим] (* <- lang_ru;; *);
+        [Jerusalem] (* <- lang_en;; *);;
+
+sacred_place_varanasi
+    => nrel_main_idtf:
+        [Варанаси] (* <- lang_ru;; *);
+        [Varanasi] (* <- lang_en;; *);;
+
